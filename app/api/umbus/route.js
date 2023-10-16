@@ -17,7 +17,7 @@ export async function GET(){
         .map(span => span.text)
     const infoNum = busStops.length >= 12 ? 4 : 3;
 
-    const infoList=busStops.slice(0,infoNum);
+    const infoList=busStops.slice(1,infoNum);
     const busList=busStops.slice(infoNum).filter((bus)=>bus[0]!='M');
 
 
