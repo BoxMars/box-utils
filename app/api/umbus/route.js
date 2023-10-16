@@ -15,7 +15,7 @@ export async function GET(){
 
     const busStops = root.querySelectorAll('span')
         .map(span => span.text)
-    const infoNum = busStops.length >= 13 ? 5 : 4;
+    const infoNum = busStops.length >= 13 ? 4 : 3;
 
     const infoList=busStops.slice(0,infoNum);
     const busList=busStops.slice(infoNum);
