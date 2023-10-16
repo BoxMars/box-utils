@@ -9,7 +9,6 @@ export async function GET(){
         },
         cache: "no-cache",
       });
-    // generate DOM from HTML string
     console.log(res)
     const html = await res.json();
     const root = parse(html['_tapestry']['content'][0][1])
