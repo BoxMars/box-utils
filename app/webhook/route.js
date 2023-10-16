@@ -18,7 +18,7 @@ async function onUpdate (update) {
     }
   }
 
-export async function GET (request){
+export async function POST (request){
     if (request.headers.get('X-Telegram-Bot-Api-Secret-Token') !== process.env.TG_BOT_TOKEN){
         return new NextResponse('Unauthorized', { status: 403 })
     }
