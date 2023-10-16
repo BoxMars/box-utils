@@ -7,7 +7,7 @@ export async function GET(){
         "headers": {
           "x-requested-with": "XMLHttpRequest",
         },
-        cache: "no-cache",
+        cache: "no-store",
       });
     console.log(res)
     const html = await res.json();
