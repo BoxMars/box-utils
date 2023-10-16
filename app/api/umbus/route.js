@@ -18,7 +18,8 @@ export async function GET(){
     const infoNum = busStops.length >= 12 ? 4 : 3;
 
     const infoList=busStops.slice(0,infoNum);
-    const busList=busStops.slice(infoNum);
+    const busList=busStops.slice(infoNum).filter((bus)=>bus[0]!='M');
+
 
     const busLeft = root.querySelectorAll('.left')
         .map(left => {
